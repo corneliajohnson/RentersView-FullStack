@@ -26,7 +26,7 @@ CREATE TABLE [UserProfile] (
   [Phone] nvarchar(255),
   [FirebaseId] integer NOT NULL,
   [IsLandlord] bit DEFAULT 1 NOT NULL,
-  [Landlord] integer,
+  [LandlordId] integer,
   [DateCreated] datetime NOT NULL
 
   CONSTRAINT UQ_FirebaseId UNIQUE(FirebaseId),
