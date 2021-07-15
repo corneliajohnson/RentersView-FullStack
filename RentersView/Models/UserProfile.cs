@@ -30,7 +30,7 @@ namespace RentersView.Models
         [Required]
         public bool IsLandlord { get; set; }
 
-        public int Landlord { get; set; }
+        public int LandlordId { get; set; }
 
         [Required]
         public DateTime DateCreated { get; set; }
