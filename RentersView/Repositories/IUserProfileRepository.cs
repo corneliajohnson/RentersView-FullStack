@@ -1,4 +1,5 @@
 ﻿using RentersView.Models;
+using System.Collections.Generic;
 
 namespace RentersView.Repositories
 {
@@ -6,5 +7,6 @@ namespace RentersView.Repositories
     {
         void Add(UserProfile userProfile);
         UserProfile GetByFirebaseId(string firebaseId);
+        List<UserProfile> GetAll();
     }
 }

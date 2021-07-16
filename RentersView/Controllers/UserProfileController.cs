@@ -29,5 +29,11 @@ namespace RentersView.Controllers
                 new { firebaseId = landlord.FirebaseId },
                 landlord);
         }
+
+        [HttpGet("getusers")]
+        public IActionResult GetAll()
+        {
+            return Ok(_userProfileRepo.GetAll());
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using RentersView.Data;
 using RentersView.Models;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace RentersView.Repositories
@@ -26,5 +27,9 @@ namespace RentersView.Repositories
             _context.SaveChanges();
         }
 
+        public List<UserProfile> GetAll()
+        {
+            return _context.UserProfile.ToList();
+        }
     }
 }
