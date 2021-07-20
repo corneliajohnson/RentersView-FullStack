@@ -24,7 +24,7 @@ CREATE TABLE [UserProfile] (
   [LastName] nvarchar(255) NOT NULL,
   [Email] nvarchar(255) NOT NULL,
   [Phone] nvarchar(255),
-  [FirebaseId] integer NOT NULL,
+  [FirebaseId] nvarchar(255) NOT NULL,
   [IsLandlord] bit DEFAULT 1 NOT NULL,
   [LandlordId] integer,
   [DateCreated] datetime NOT NULL
